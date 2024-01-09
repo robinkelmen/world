@@ -1,10 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-import { BloomPass } from 'three/addons/postprocessing/BloomPass.js';
-import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { Universe } from './universe.js';
 import { CelestialBody } from './celestialbody.js';
 import Stats from 'three/examples/jsm/libs/stats.module'
@@ -123,7 +119,7 @@ cubeFolder.add(sunMaterial.uniforms.seamlessV, 'value', false, true);
 cubeFolder.open()
 
 
-let startTime = performance.now();
+//let startTime = performance.now();
 
 function animate() {
     requestAnimationFrame(animate);
